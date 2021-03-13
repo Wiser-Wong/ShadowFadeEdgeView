@@ -239,6 +239,46 @@ class ShadowFadeEdgeView(context: Context, attrs: AttributeSet) : FrameLayout(co
 
     }
 
+    fun setLeftShadowFadeLength(length: Float) {
+        this.shadowFadeLengthLeft = length
+        invalidate()
+    }
+
+    fun setTopShadowFadeLength(length: Float) {
+        this.shadowFadeLengthTop = length
+        invalidate()
+    }
+
+    fun setRightShadowFadeLength(length: Float) {
+        this.shadowFadeLengthRight = length
+        invalidate()
+    }
+
+    fun setBottomShadowFadeLength(length: Float) {
+        this.shadowFadeLengthBottom = length
+        invalidate()
+    }
+
+    fun setLeftShadowDirection(isLeftShadowDirection: Boolean) {
+        this.isLeftShadowDirection = isLeftShadowDirection
+        invalidate()
+    }
+
+    fun setTopShadowDirection(isTopShadowDirection: Boolean) {
+        this.isTopShadowDirection = isTopShadowDirection
+        invalidate()
+    }
+
+    fun setRightShadowDirection(isRightShadowDirection: Boolean) {
+        this.isRightShadowDirection = isRightShadowDirection
+        invalidate()
+    }
+
+    fun setBottomShadowDirection(isBottomShadowDirection: Boolean) {
+        this.isBottomShadowDirection = isBottomShadowDirection
+        invalidate()
+    }
+
     private fun dp2px(dpValue: Float): Float {
         val scale: Float = resources.displayMetrics.density
         return (dpValue * scale + 0.5f).toFloat()
