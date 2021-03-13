@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ShadowFadeEdgeView">
+        <attr name="sfev_left_fade_length" format="dimension" />
+        <attr name="sfev_top_fade_length" format="dimension" />
+        <attr name="sfev_right_fade_length" format="dimension" />
+        <attr name="sfev_bottom_fade_length" format="dimension" />
+        <attr name="sfev_is_left_fade_direction" format="boolean" />
+        <attr name="sfev_is_top_fade_direction" format="boolean" />
+        <attr name="sfev_is_right_fade_direction" format="boolean" />
+        <attr name="sfev_is_bottom_fade_direction" format="boolean" />
+    </declare-styleable>
+</resources>
